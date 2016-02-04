@@ -358,6 +358,10 @@
 		84C959891B731FD20017D3ED /* ChatBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C959881B731FD20017D3ED /* ChatBaseCell.swift */; };
 		92E0FFE71C5F38E400226B96 /* MZFayeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E0FFE41C5F38E400226B96 /* MZFayeClient.m */; };
 		92E0FFE81C5F38E400226B96 /* MZFayeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E0FFE61C5F38E400226B96 /* MZFayeMessage.m */; };
+		ACC662291C63526100727583 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC662271C63526100727583 /* Realm.framework */; };
+		ACC6622A1C63526100727583 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACC662271C63526100727583 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACC6622B1C63526100727583 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC662281C63526100727583 /* RealmSwift.framework */; };
+		ACC6622C1C63526100727583 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACC662281C63526100727583 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B00500D7E943DDD27CF9C562 /* Pods_Yep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3146F0F60F2A38BC6E0FA66 /* Pods_Yep.framework */; };
 /* End PBXBuildFile section */
 
@@ -370,6 +374,21 @@
 			remoteInfo = Yep;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACC6622D1C63526100727583 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ACC6622C1C63526100727583 /* RealmSwift.framework in Embed Frameworks */,
+				ACC6622A1C63526100727583 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A0A11811AE389380008772C /* RegisterSkillsLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterSkillsLayout.swift; path = ViewControllers/Register/RegisterSkillsLayout.swift; sourceTree = "<group>"; };
@@ -735,6 +754,8 @@
 		92E0FFE41C5F38E400226B96 /* MZFayeClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFayeClient.m; sourceTree = "<group>"; };
 		92E0FFE51C5F38E400226B96 /* MZFayeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFayeMessage.h; sourceTree = "<group>"; };
 		92E0FFE61C5F38E400226B96 /* MZFayeMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFayeMessage.m; sourceTree = "<group>"; };
+		ACC662271C63526100727583 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		ACC662281C63526100727583 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		C3146F0F60F2A38BC6E0FA66 /* Pods_Yep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -747,12 +768,14 @@
 				6AC40E351C47A9060024FC63 /* libsqlite3.tbd in Frameworks */,
 				0AD7EA641AC3ED2A00617758 /* SystemConfiguration.framework in Frameworks */,
 				6AC40E311C47A8EE0024FC63 /* CoreData.framework in Frameworks */,
+				ACC662291C63526100727583 /* Realm.framework in Frameworks */,
 				0AD7EA681AC3ED3600617758 /* Foundation.framework in Frameworks */,
 				0AAFCFF91AC8CA5B00EB0EF8 /* MobileCoreServices.framework in Frameworks */,
 				0AD7EA6C1AC3ED4300617758 /* Security.framework in Frameworks */,
 				0AD7EA6A1AC3ED3D00617758 /* UIKit.framework in Frameworks */,
 				0AD7EA661AC3ED3000617758 /* CoreGraphics.framework in Frameworks */,
 				0AD7EA621AC3ED2100617758 /* CoreTelephony.framework in Frameworks */,
+				ACC6622B1C63526100727583 /* RealmSwift.framework in Frameworks */,
 				0AD7EA601AC3ED1900617758 /* CoreFoundation.framework in Frameworks */,
 				0AD7EA5E1AC3ED1200617758 /* CFNetwork.framework in Frameworks */,
 				B00500D7E943DDD27CF9C562 /* Pods_Yep.framework in Frameworks */,
@@ -2275,6 +2298,8 @@
 		67B708B60AAD1DEA82A6A682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACC662271C63526100727583 /* Realm.framework */,
+				ACC662281C63526100727583 /* RealmSwift.framework */,
 				6AC40E341C47A9060024FC63 /* libsqlite3.tbd */,
 				6AC40E321C47A8FE0024FC63 /* libz.tbd */,
 				6AC40E301C47A8EE0024FC63 /* CoreData.framework */,
@@ -2407,6 +2432,7 @@
 				39615BAC5D2C17889BD12838 /* Embed Pods Frameworks */,
 				67B15DACB809FA624B07B937 /* Copy Pods Resources */,
 				0AFE75AD1AC43DD1005AA33E /* ShellScript */,
+				ACC6622D1C63526100727583 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
